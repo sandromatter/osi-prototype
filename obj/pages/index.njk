@@ -1,24 +1,47 @@
-{% extends "main.njk" %}
+<!-- Imports and variables -->
 {% import "macros/_hero-img.njk" as macroHero%}
+{% import "macros/_call-to-action.njk" as macroCta%}
 
 {% set page = 'home' %}
+{% set posts = [
+    {
+      "postTitle"   : "Fliegendes Velo",
+      "postText"    : "Lorem ipsum dolor sit amet."
+    },
+    {
+      "postTitle"   : "Bierzapfhahn",
+      "postText"    : "Lorem ipsum dolor sit amet."
+    },
+    {
+      "postTitle"   : "Fugenreiniger",
+      "postText"    : "Lorem ipsum dolor sit amet."
+    }
+  ]
+%}
 
+{% extends "main.njk" %}
+
+<!-- Navigation Category -->
 {% block navCategory %}
   {% include 'components/_nav-category.njk' %}
 {% endblock %}
 
+<!-- Main -->
 {% block content %}
 
 <div class="container">
 
-    {{ macroHero.getHero("Titel", "Untertitel") }}
+  {{ macroHero.getHero("Titel", "Untertitel") }}
 
-      <hr/>
+  <hr/>
 
-    {% include 'components/_feed.njk' %}
+  {% include "components/_feed.njk" %}
 
-</div>
+  {{ macroCta.getCta("Eigene Idee? Jetzt hochladen!", "Start") }}
 
 {% endblock content %}
+
+
+
 
 

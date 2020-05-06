@@ -1,5 +1,5 @@
 <!-- declaring var in Nunjucks: use `set` keyword -->
-{% set navs = [
+{% set navsMain = [
     { title: 'Home', url: 'index.html', state: 'home' },
     { title: 'Über', url: 'ueber.html', state: 'ueber' },
     { title: 'Kontakt', url: 'kontakt.html', state: 'kontakt' }
@@ -17,8 +17,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-        <!-- for loop in Nunjucks -->
-        {% for nav in navs %}
+
+        {% for nav in navsMain %}
             {% if page == nav.state %}
             <li class="active">
             {% else %}
@@ -27,6 +27,7 @@
                 <a class="nav-item nav-link" href="{{ nav.url }}">{{ nav.title }}</a>
             </li>
         {% endfor %}
+        
     </div>
   </div>
 </nav>

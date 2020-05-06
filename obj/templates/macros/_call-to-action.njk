@@ -1,0 +1,18 @@
+{% macro getCta(ctaText, ctaButton) %}
+
+<div class="row cta-box gradient justify-content mt-4">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <p class="h2">{{ ctaText }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-end">
+                <button type="button" class="btn btn-light">{{ ctaButton }}</button>
+            </div>
+        </div>
+    </div>    
+</div>    
+
+{% endmacro %}

@@ -20,6 +20,11 @@
     font-weight: 700;
 }
 
+body,
+p {
+    font-family: $font-family-sans-serif;
+}
+
 //==============================================================================
 // Navigation
 //==============================================================================
@@ -79,7 +84,16 @@ html, body {
     overflow-x: hidden;
 }
 
-.btn {
+.btn-primary {
     background-color: $primary;
     border-color: $primary;
+}
+
+.gradient {
+    background-image: $gradient;
+}
+
+.cta-box {
+    height: 30vh;
+    align-content: space-around;
 }

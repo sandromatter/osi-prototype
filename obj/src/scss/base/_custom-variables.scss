@@ -7,13 +7,13 @@
 // scss-docs-end colors-map
 
 $primary:       #01243D !important;
+$gradient: linear-gradient(-90deg, #1A00BF, #63FFFE);
 
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      'Source Sans Pro', sans-serif, system-ui, -apple-system !important;
 $font-family-monospace:       'Source Code Pro', monospace !important;
 $font-family-base:            var(--bs-font-sans-serif) !default;
-// stylelint-enable value-keyword-case
