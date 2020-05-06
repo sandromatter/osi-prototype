@@ -6,15 +6,18 @@
 {% set posts = [
     {
       "postTitle"   : "Fliegendes Velo",
-      "postText"    : "Lorem ipsum dolor sit amet."
+      "postText"    : "Lorem ipsum dolor sit amet.",
+      "postImage"   : "nature"
     },
     {
       "postTitle"   : "Bierzapfhahn",
-      "postText"    : "Lorem ipsum dolor sit amet."
+      "postText"    : "Lorem ipsum dolor sit amet.",
+      "postImage"   : "clean"
     },
     {
       "postTitle"   : "Fugenreiniger",
-      "postText"    : "Lorem ipsum dolor sit amet."
+      "postText"    : "Lorem ipsum dolor sit amet.",
+      "postImage"   : "boat"
     }
   ]
 %}
@@ -38,6 +41,8 @@
   {% include "components/_feed.njk" %}
 
   {{ macroCta.getCta("Eigene Idee? Jetzt hochladen!", "Start") }}
+
+  {% include 'components/_carousel.njk' %}
 
 {% endblock content %}
 
