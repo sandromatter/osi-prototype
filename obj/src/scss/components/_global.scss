@@ -1,0 +1,85 @@
+/**
+ * Global CSS additional to bootstrap CSS.
+ *
+ */
+
+//==============================================================================
+// Typography
+//==============================================================================
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: $font-family-monospace;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+//==============================================================================
+// Navigation
+//==============================================================================
+
+.avatar {
+    margin: 0 1rem 0 auto;
+    img {
+       height: 3rem;
+    }
+}
+
+.navbar-brand > img {
+    height: 4rem;
+}
+
+// Nav category with side scroll
+
+.navbar-category {
+    background: $primary;
+    width: 100%;
+}
+
+.navbar-category-list{
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.navbar-category-list::-webkit-scrollbar {
+    display: none; 
+}
+
+.navbar-category-list > li > a {
+    color: $white;
+    text-decoration: none;
+}
+
+.navbar-category-list > li:not(:first-child):before {
+    content: "//";
+    color: $white;
+    float: left;
+    margin: 8px 0 0 -6px;
+}
+
+.navbar-category-list > li > a.active {
+    text-decoration: underline;
+}
+
+//==============================================================================
+// Body
+//==============================================================================
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.btn {
+    background-color: $primary;
+    border-color: $primary;
+}

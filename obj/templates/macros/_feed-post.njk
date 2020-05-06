@@ -1,0 +1,11 @@
+{% macro getPost(postTitle, postText) %}
+
+<div class="row">
+    <div class="col-8">
+        <h1 class="h3">{{ postTitle }}</h1>
+        <p>{{ postText }}<p>
+    </div>
+    <img class="img-fluid col-4 mb-3" src="https://source.unsplash.com/100x100" alt="Random unsplash image.">
+</div>
+
+{% endmacro %}

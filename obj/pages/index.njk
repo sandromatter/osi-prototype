@@ -1,0 +1,24 @@
+{% extends "main.njk" %}
+{% import "macros/_hero-img.njk" as macroHero%}
+
+{% set page = 'home' %}
+
+{% block navCategory %}
+  {% include 'components/_nav-category.njk' %}
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    {{ macroHero.getHero("Titel", "Untertitel") }}
+
+      <hr/>
+
+    {% include 'components/_feed.njk' %}
+
+</div>
+
+{% endblock content %}
+
+

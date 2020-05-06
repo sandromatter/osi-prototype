@@ -1,0 +1,88 @@
+/**
+ * Additional CSS
+ *
+ */
+/**
+ * Variables
+ *
+ * Variables should follow the `$component-state-property-size` formula for
+ * consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+ *
+ */
+/**
+ * Custom variables to overwrite
+ *  Bootstrap 4 variables. Careful with !important.
+ *
+ */
+/**
+ * Global CSS additional to bootstrap CSS.
+ *
+ */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Source Code Pro", monospace !important;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.avatar {
+  margin: 0 1rem 0 auto;
+}
+
+.avatar img {
+  height: 3rem;
+}
+
+.navbar-brand > img {
+  height: 4rem;
+}
+
+.navbar-category {
+  background: #01243D !important;
+  width: 100%;
+}
+
+.navbar-category-list {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.navbar-category-list::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-category-list > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-category-list > li:not(:first-child):before {
+  content: "//";
+  color: #fff;
+  float: left;
+  margin: 8px 0 0 -6px;
+}
+
+.navbar-category-list > li > a.active {
+  text-decoration: underline;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.btn {
+  background-color: #01243D !important;
+  border-color: #01243D !important;
+}

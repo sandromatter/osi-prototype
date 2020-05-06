@@ -1,0 +1,40 @@
+{% import "macros/_feed-post.njk" as macroPost %}
+
+{% set posts = [
+    {
+      "postTitle"   : "Bierzapfhahn",
+      "postText"    : "Lorem ipsum dolor sit amet."
+    },
+    {
+      "postTitle"   : "Bierzapfhahn",
+      "postText"    : "Lorem ipsum dolor sit amet."
+    },
+    {
+      "postTitle"   : "Bierzapfhahn",
+      "postText"    : "Lorem ipsum dolor sit amet."
+    }
+  ]
+%}
+
+<div class="row">
+
+  <h2 class="col-12 h2 mt-3 mb-5">
+    {% if title %}
+        {{ title }}
+    {% else %}
+        Meistgesehen
+    {% endif %}
+  </h2>
+
+  {% for post in posts %}
+    <div class="col-12">
+      {{ 
+        macroPost.getPost(
+        getPost.postTitle, 
+        getPost.postText
+        ) 
+      }}
+    </div>
+  {% endfor %}
+
+</div>

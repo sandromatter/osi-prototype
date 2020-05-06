@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<!-- HTML Head -->
+{% include 'partials/_head-main.njk' %}
+
+<body>
+
+  <!-- Navigation Main-->
+  {% include 'components/_nav-main.njk' %}
+
+  <!-- Navigation Category-->
+  {% block navCategory %}
+  {% endblock %}
+
+  <!-- Main -->
+  <main>
+    <article>
+    {% block content %}
+    {% endblock %}
+    </article>
+  </main>
+
+  <!-- Footer -->
+  {% include 'components/_footer.njk' %}
+
+  <!-- Optional JavaScript -->
+  {% include 'partials/_js-main.njk' %}
+
+</body>
+
+</html>
