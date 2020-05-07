@@ -13,17 +13,17 @@ var browserSync = require('browser-sync').create();
 var nunjucksRender = require('gulp-nunjucks-render');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
-var siteOutput = 'bin';
+var siteOutput = 'docs';
 
 
 // -----------------------------------------------------------------------------
 // Configuration
 // -----------------------------------------------------------------------------
 
-var input = 'obj/src/scss/**/*.scss';
-var inputMain = 'obj/src/scss/style.scss';
+var input = 'dev/src/scss/**/*.scss';
+var inputMain = 'dev/src/scss/style.scss';
 var output = siteOutput + '/css';
-var inputTemplates = 'obj/pages/*.njk';
+var inputTemplates = 'dev/pages/*.njk';
 var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 var sassdocOptions = { dest: siteOutput + '/sassdoc' };
@@ -48,7 +48,7 @@ gulp.task('sass', function () {
 // -----------------------------------------------------------------------------
 
 gulp.task('nunjucks', function () {
-  nunjucksRender.nunjucks.configure(['obj/templates']);
+  nunjucksRender.nunjucks.configure(['dev/templates']);
   // Gets .html and .nunjucks files in pages
   return gulp.src(inputTemplates)
     // Renders template with nunjucks
