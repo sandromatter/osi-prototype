@@ -98,9 +98,19 @@ html, body {
     align-content: space-around;
 }
 
+// Carousel
 
+.carousel-control-next,
+.carousel-control-prev {
+    opacity: unset;
+}
 
-/* Carousel */
+.text-muted.next,
+.text-muted.previous {
+    color: black !important;
+}
+
+/* Carousel media queries */
 @media (min-width: 768px) {
 
     /* show 3 items */
