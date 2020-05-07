@@ -47,6 +47,10 @@ p {
     width: 100%;
 }
 
+.navbar-category-nowrap {
+    white-space: nowrap;
+}
+
 .navbar-category-list{
     list-style: none;
     display: flex;
@@ -89,6 +93,11 @@ html, body {
     border-color: $primary;
 }
 
+.btn-size {
+    width: 150px;
+    max-width: 150px;
+}
+
 .gradient {
     background-image: $gradient;
 }
@@ -96,6 +105,7 @@ html, body {
 .cta-box {
     height: 30vh;
     align-content: space-around;
+    
 }
 
 // Carousel
@@ -112,7 +122,6 @@ html, body {
 
 /* Carousel media queries */
 @media (min-width: 768px) {
-
     /* show 3 items */
     .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
@@ -176,5 +185,28 @@ html, body {
         display: block;
         visibility: visible;
     }
+}
 
+// Footer
+
+footer {
+    background-color: $primary;
+}
+
+.footer-white {
+    color: $white !important;
+}
+
+.footer-icons {
+    color: $white;
+}
+
+.footer-hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+        border-top-color: currentcolor;
+        border-top-style: none;
+        border-top-width: 0px;
+    border-top: 1px solid $white;
 }

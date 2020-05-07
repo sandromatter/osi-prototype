@@ -1,26 +1,25 @@
 {% set navsCategory = [
-    { title: 'Gastro', url: 'category.html', state: 'gastro' },
-    { title: 'Über', url: 'category.html', state: 'ueber' },
-    { title: 'Kontakt', url: 'category.html', state: 'kontakt' },
-    { title: 'Gastro', url: 'category.html', state: 'gastro' },
-    { title: 'Über', url: 'category.html', state: 'ueber' },
-    { title: 'Kontakt', url: 'category.html', state: 'kontakt' },
-    { title: 'Gastro', url: 'category.html', state: 'gastro' },
-    { title: 'Über', url: 'category.html', state: 'ueber' },
-    { title: 'Kontakt', url: 'category.html', state: 'kontakt' }
+    { title: 'Gesellschaft', url: 'gesellschaft.html', state: 'gesellschaft' },
+    { title: 'Design & Tech', url: 'design-tech.html', state: 'design-tech' },
+    { title: 'Industrie', url: 'industrie.html', state: 'industrie' },
+    { title: 'Tourismus & Gastro', url: 'tourismus-gastro.html', state: 'tourismus-gastro' },
+    { title: 'Wirtschaft', url: 'wirtschaft.html', state: 'wirtschaft' },
+    { title: 'Medien & Marketing', url: 'medien-marketing.html', state: 'medien-marketing' },
+    { title: 'Handel', url: 'handel.html', state: 'handel' },
+    { title: 'Freizeit', url: 'freizeit.html', state: 'freizeit' }
 ] %}
 
 <nav class="navbar navbar-category">
     <ul class="navbar-category-list mb-0 pl-0">
 
         {% for nav in navsCategory %}
-
+        
             {% if page == nav.state %}
             <li class="active">
-                <a class="nav-item nav-link" href="{{ nav.url }}">{{ nav.title }}</a>
+                <a class="nav-item nav-link" href="{{ nav.url }}"><span class="navbar-category-nowrap">{{ nav.title }}</span></a>
             {% else %}
             <li>
-                <a class="nav-item nav-link" href="{{ nav.url }}">{{ nav.title }}</a>
+                <a class="nav-item nav-link" href="{{ nav.url }}"><span class="navbar-category-nowrap">{{ nav.title }}</span></a>
             {% endif %}
             </li>
 

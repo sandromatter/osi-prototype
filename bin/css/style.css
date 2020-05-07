@@ -53,6 +53,10 @@ p {
   width: 100%;
 }
 
+.navbar-category-nowrap {
+  white-space: nowrap;
+}
+
 .navbar-category-list {
   list-style: none;
   display: -ms-flexbox;
@@ -90,6 +94,11 @@ html, body {
 .btn-primary {
   background-color: #01243D !important;
   border-color: #01243D !important;
+}
+
+.btn-size {
+  width: 150px;
+  max-width: 150px;
 }
 
 .gradient {
@@ -171,4 +180,26 @@ html, body {
     display: block;
     visibility: visible;
   }
+}
+
+footer {
+  background-color: #01243D !important;
+}
+
+.footer-white {
+  color: #fff !important;
+}
+
+.footer-icons {
+  color: #fff;
+}
+
+.footer-hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top-color: currentcolor;
+  border-top-style: none;
+  border-top-width: 0px;
+  border-top: 1px solid #fff;
 }

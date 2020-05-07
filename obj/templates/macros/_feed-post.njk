@@ -1,13 +1,13 @@
-{% macro getPost(postTitle, postText, postImage) %}
+{% macro getPost(postTitle, postText, postUrl) %}
 
 <div class="col-12 mb-4">
     <div class="row">
         <div class="col-8">
-            <h1 class="h4 mb-2">{{ postTitle }}</h1>
+            <h3 class="h4 mb-2">{{ postTitle }}</h3>
             <p class="mb-0">{{ postText }}</p>
         </div>
-        <div class="col-4">
-            <img class="img-fluid" src="https://source.unsplash.com/100x100/?{{ postImage }}" alt="Random unsplash image.">
+        <div class="col-4 d-flex justify-content-end">
+            <img class="img-fluid" src="https://source.unsplash.com/100x100/?{{ postUrl }}" alt="Random unsplash image.">
         </div>
     </div>
 </div>

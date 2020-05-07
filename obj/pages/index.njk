@@ -1,23 +1,23 @@
 <!-- Imports and variables -->
 {% import "macros/_hero-img.njk" as macroHero%}
 {% import "macros/_call-to-action.njk" as macroCta%}
-
 {% set page = 'home' %}
 {% set posts = [
     {
-      "postTitle"   : "Fliegendes Velo",
-      "postText"    : "Lorem ipsum dolor sit amet.",
-      "postImage"   : "nature"
+      "postTitle"   : "Bezahlbares High-End Bike",
+      "postText"    : "Super Teil für wenig Cash.",
+      "postUrl"     : "bike"
     },
     {
       "postTitle"   : "Bierzapfhahn",
-      "postText"    : "Lorem ipsum dolor sit amet.",
-      "postImage"   : "clean"
+      "postText"    : "Mit einem grossen *habenwill* Effekt.",
+      "postUrl"     : "beer"
+
     },
     {
-      "postTitle"   : "Fugenreiniger",
-      "postText"    : "Lorem ipsum dolor sit amet.",
-      "postImage"   : "boat"
+      "postTitle"   : "Code-School",
+      "postText"    : "Endlich einfach erklärt.",
+      "postUrl"     : "code"
     }
   ]
 %}
@@ -34,7 +34,7 @@
 
 <div class="container">
 
-  {{ macroHero.getHero("Titel", "Untertitel") }}
+  {{ macroHero.getHero("Device-Smarterer", "Idee des Tages", "Damit sie jederzeit schnell jedes Ihrer Geräte zum Smart-Device umbauen können.", "device") }}
 
   <hr/>
 
@@ -45,8 +45,3 @@
   {% include 'components/_carousel.njk' %}
 
 {% endblock content %}
-
-
-
-
-

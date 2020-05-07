@@ -1,16 +1,22 @@
-{% macro getHero(heroTitle, heroSubtitle) %}
+{% macro getHero(heroTitle, heroSubtitle, heroText, heroUrl) %}
 
 <div class="row">
-    <a href="index.html">
-        <img class="img-fluid mb-4" src="https://source.unsplash.com/1200x900/?product,tech,design" alt="Random unsplash image">
-    </a>
-</div>
-
-<div class="row">
-    <h2 class="col-12 h3 mb-4">{{ heroSubtitle }}</h2>
-    <h1 class="col-12 h1 mb-4 bold">{{ heroTitle }}</h1> 
-    <div class="col">
-        <button type="button" class="btn btn-primary mb-3">zum Projekt</button>
+    <div class="col-12">
+        <div class="row">
+            <a href="index.html">
+                <img class="img-fluid mb-4" src="https://source.unsplash.com/1200x900/?{{ heroUrl }}" alt="Random unsplash image">
+            </a>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="row">
+            <h2 class="col-12 h3 mb-4">{{ heroSubtitle }}</h2>
+            <h1 class="col-12 h1 mb-4 bold">{{ heroTitle }}</h1> 
+            <p class="col-9 mb-">{{ heroText }}</p>
+            <div class="col-12 mb-3 d-flex justify-content-end align-items-end">
+                <button type="button" class="btn btn-primary btn-size">zum Projekt</button>
+            </div>
+        </div>
     </div>
 </div>
 
