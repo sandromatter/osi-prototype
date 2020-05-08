@@ -29,11 +29,8 @@ p {
 // Navigation
 //==============================================================================
 
-.avatar {
-    margin: 0 1rem 0 auto;
-    img {
+.avatar > img {
        height: 3rem;
-    }
 }
 
 .navbar-brand > img {
@@ -78,6 +75,34 @@ p {
 .navbar-category-list > li > a.active {
     text-decoration: underline;
 }
+
+.nav-link-text:hover {
+    text-decoration: underline !important;
+}
+
+.dropdown-menu {
+    position: absolute !important;
+    top: 100%;
+    left: -100%;
+}
+
+.nav-item-menu {
+    @include small-breakpoint {
+        margin-left: auto;
+        order: 2;
+    }
+}
+
+.nav-item-avatar {
+    margin-left: auto;
+    padding-right: 1rem;
+    @include small-breakpoint {
+        margin-left: 0;
+        padding-right: 0;
+        order: 3;
+    }
+}
+
 
 //==============================================================================
 // Body

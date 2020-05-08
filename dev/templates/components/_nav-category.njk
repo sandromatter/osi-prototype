@@ -9,17 +9,17 @@
     { title: 'Freizeit', url: 'freizeit.html', state: 'freizeit' }
 ] %}
 
-<nav class="navbar navbar-category">
+<nav class="navbar navbar-category d-flex justify-content-around">
     <ul class="navbar-category-list mb-0 pl-0">
 
         {% for nav in navsCategory %}
         
             {% if page == nav.state %}
             <li class="active">
-                <a class="nav-item nav-link" href="{{ nav.url }}"><span class="navbar-category-nowrap">{{ nav.title }}</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="{{ nav.url }}">{{ nav.title }}</a>
             {% else %}
             <li>
-                <a class="nav-item nav-link" href="{{ nav.url }}"><span class="navbar-category-nowrap">{{ nav.title }}</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="{{ nav.url }}">{{ nav.title }}</a>
             {% endif %}
             </li>
 

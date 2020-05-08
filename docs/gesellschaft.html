@@ -35,55 +35,68 @@
   <!-- Navigation Main -->
   
 
-<nav class="navbar nav-main navbar-expand-lg navbar-light mb-0">
-  <a class="navbar-brand" href="index.html">
-    <img src="img/OSI_Logo.png" alt="OSI Logo">
-  </a>
-  <a class="avatar" href="user.html">
-    <img class="rounded-circle" src="img/Profilbild.jpg" alt="User avatar">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-
-        
-            
-            <li>
-            
-                <a class="nav-item nav-link" href="index.html">Home</a>
-            </li>
-        
-            
-            <li>
-            
-                <a class="nav-item nav-link" href="neue-idee.html">Idee teilen</a>
-            </li>
-        
-            
-            <li>
-            
-                <a class="nav-item nav-link" href="heisse-idee.html">Heisse Ideen</a>
-            </li>
-        
-        
+<header id="header">
+  <nav id="nav-bar" class="navbar nav-main navbar-light navbar-expand-sm">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/OSI_Logo.png" alt="OSI Logo">
+    </a>
+    <div class="nav-item nav-item-avatar flex-grow-0">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link avatar dropdown-toggle" data-toggle="dropdown">
+            <img class="rounded-circle" src="img/Profilbild.jpg" alt="User avatar">
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="profile.html">Dashboard</a>
+            <a class="dropdown-item" href="profile.html">Profil bearbeiten</a>
+            <a class="dropdown-item" href="home.html">Log Out</a>
+          </div>
+        </li>   
+      </ul>
     </div>
-  </div>
-</nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-item-menu flex-grow-0 text-center" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+
+      
+            
+            <li>
+            
+                <a class="nav-link nav-link-text text-body" href="index.html">Home</a>
+            </li class="nav-item">
+        
+            
+            <li>
+            
+                <a class="nav-link nav-link-text text-body" href="neue-idee.html">Idee teilen</a>
+            </li class="nav-item">
+        
+            
+            <li>
+            
+                <a class="nav-link nav-link-text text-body" href="heisse-idee.html">Heisse Ideen</a>
+            </li class="nav-item">
+        
+
+      </ul>
+    </div>
+  </nav>
+</header>
 
   <!-- Navigation Category -->
   
   
 
-<nav class="navbar navbar-category">
+<nav class="navbar navbar-category d-flex justify-content-around">
     <ul class="navbar-category-list mb-0 pl-0">
 
         
         
             
             <li class="active">
-                <a class="nav-item nav-link" href="gesellschaft.html"><span class="navbar-category-nowrap">Gesellschaft</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="gesellschaft.html">Gesellschaft</a>
             
             </li>
 
@@ -91,7 +104,7 @@
         
             
             <li>
-                <a class="nav-item nav-link" href="design-tech.html"><span class="navbar-category-nowrap">Design &amp; Tech</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="design-tech.html">Design &amp; Tech</a>
             
             </li>
 
@@ -99,7 +112,7 @@
         
             
             <li>
-                <a class="nav-item nav-link" href="industrie.html"><span class="navbar-category-nowrap">Industrie</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="industrie.html">Industrie</a>
             
             </li>
 
@@ -107,7 +120,7 @@
         
             
             <li>
-                <a class="nav-item nav-link" href="tourismus-gastro.html"><span class="navbar-category-nowrap">Tourismus &amp; Gastro</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="tourismus-gastro.html">Tourismus &amp; Gastro</a>
             
             </li>
 
@@ -115,7 +128,7 @@
         
             
             <li>
-                <a class="nav-item nav-link" href="wirtschaft.html"><span class="navbar-category-nowrap">Wirtschaft</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="wirtschaft.html">Wirtschaft</a>
             
             </li>
 
@@ -123,7 +136,7 @@
         
             
             <li>
-                <a class="nav-item nav-link" href="medien-marketing.html"><span class="navbar-category-nowrap">Medien &amp; Marketing</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="medien-marketing.html">Medien &amp; Marketing</a>
             
             </li>
 
@@ -131,7 +144,7 @@
         
             
             <li>
-                <a class="nav-item nav-link" href="handel.html"><span class="navbar-category-nowrap">Handel</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="handel.html">Handel</a>
             
             </li>
 
@@ -139,7 +152,7 @@
         
             
             <li>
-                <a class="nav-item nav-link" href="freizeit.html"><span class="navbar-category-nowrap">Freizeit</span></a>
+                <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="freizeit.html">Freizeit</a>
             
             </li>
 
@@ -161,18 +174,22 @@
 <div class="row">
     <div class="col-12">
         <div class="row">
-            <a href="index.html">
-                <img class="img-fluid mb-4" src="https://source.unsplash.com/1200x900/?game" alt="Random unsplash image">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid mb-4" src="https://source.unsplash.com/1200x900/?cardgame" alt="Random unsplash image">
             </a>
         </div>
     </div>
     <div class="col-12">
         <div class="row">
-            <h2 class="col-12 h3 mb-4">Idee des Tages</h2>
-            <h1 class="col-12 h1 mb-4 bold">Gesellschaftsspiel</h1> 
-            <p class="col-9 mb-">Fragen Sie sich auch immer, wieso man Besteck und Schuhlöffel zum campen mitnehmen soll? Jetzt kommt die Lösung!</p>
+            <h2 class="col-12 h3 mb-4">
+                <a class="text-body" href="device-smarterer.html">Idee des Tages</a>
+            </h2>
+            <h1 class="col-12 h1 mb-4 bold">
+                <a class="text-body" href="device-smarterer.html">DUO</h1> 
+            </a>
+            <p class="col-9 mb-">Die praktische Erweiterung zu UNO! Nie hat das Spiel mehr Spass gemacht.</p>
             <div class="col-12 mb-3 d-flex justify-content-end align-items-end">
-                <button type="button" class="btn btn-primary btn-size">zum Projekt</button>
+                <button onclick="location.href='device-smarterer.html'" type="button" class="btn btn-primary btn-size">zum Projekt</button>
             </div>
         </div>
     </div>
@@ -200,12 +217,16 @@
 
 <div class="col-12 mb-4">
     <div class="row">
-        <div class="col-8">
-            <h3 class="h4 mb-2">Bezahlbares High-End Bike</h3>
+        <div class="col-8">         
+                <h3 class="h4 mb-2">
+                    <a class="text-body" href="device-smarterer.html">Bezahlbares High-End Bike</a>
+                </h3>
             <p class="mb-0">Super Teil für wenig Cash.</p>
         </div>
         <div class="col-4 d-flex justify-content-end">
-            <img class="img-fluid" src="https://source.unsplash.com/100x100/?bike" alt="Random unsplash image.">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid" src="https://source.unsplash.com/100x100/?bike" alt="Random unsplash image.">
+            </a>
         </div>
     </div>
 </div>
@@ -216,12 +237,16 @@
 
 <div class="col-12 mb-4">
     <div class="row">
-        <div class="col-8">
-            <h3 class="h4 mb-2">Burger-Koch 3000</h3>
+        <div class="col-8">         
+                <h3 class="h4 mb-2">
+                    <a class="text-body" href="device-smarterer.html">Burger-Koch 3000</a>
+                </h3>
             <p class="mb-0">Nie war es einfacher Burger hausgemacht zu kochen</p>
         </div>
         <div class="col-4 d-flex justify-content-end">
-            <img class="img-fluid" src="https://source.unsplash.com/100x100/?burger" alt="Random unsplash image.">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid" src="https://source.unsplash.com/100x100/?burger" alt="Random unsplash image.">
+            </a>
         </div>
     </div>
 </div>
@@ -232,12 +257,16 @@
 
 <div class="col-12 mb-4">
     <div class="row">
-        <div class="col-8">
-            <h3 class="h4 mb-2">Schafschär-Roboter</h3>
+        <div class="col-8">         
+                <h3 class="h4 mb-2">
+                    <a class="text-body" href="device-smarterer.html">Schafschär-Roboter</a>
+                </h3>
             <p class="mb-0">Endlich immer Wolle zu Hause.</p>
         </div>
         <div class="col-4 d-flex justify-content-end">
-            <img class="img-fluid" src="https://source.unsplash.com/100x100/?sheep" alt="Random unsplash image.">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid" src="https://source.unsplash.com/100x100/?sheep" alt="Random unsplash image.">
+            </a>
         </div>
     </div>
 </div>
@@ -248,12 +277,16 @@
 
 <div class="col-12 mb-4">
     <div class="row">
-        <div class="col-8">
-            <h3 class="h4 mb-2">Corona Türöffner</h3>
+        <div class="col-8">         
+                <h3 class="h4 mb-2">
+                    <a class="text-body" href="device-smarterer.html">Corona Türöffner</a>
+                </h3>
             <p class="mb-0">Ohne Viren Türen öffnen.</p>
         </div>
         <div class="col-4 d-flex justify-content-end">
-            <img class="img-fluid" src="https://source.unsplash.com/100x100/?door" alt="Random unsplash image.">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid" src="https://source.unsplash.com/100x100/?door" alt="Random unsplash image.">
+            </a>
         </div>
     </div>
 </div>
@@ -264,12 +297,16 @@
 
 <div class="col-12 mb-4">
     <div class="row">
-        <div class="col-8">
-            <h3 class="h4 mb-2">Kopfhörer-Aufwickler</h3>
+        <div class="col-8">         
+                <h3 class="h4 mb-2">
+                    <a class="text-body" href="device-smarterer.html">Kopfhörer-Aufwickler</a>
+                </h3>
             <p class="mb-0">Geil! Ganz ohne Kabelsalat.</p>
         </div>
         <div class="col-4 d-flex justify-content-end">
-            <img class="img-fluid" src="https://source.unsplash.com/100x100/?headphones" alt="Random unsplash image.">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid" src="https://source.unsplash.com/100x100/?headphones" alt="Random unsplash image.">
+            </a>
         </div>
     </div>
 </div>
@@ -280,12 +317,16 @@
 
 <div class="col-12 mb-4">
     <div class="row">
-        <div class="col-8">
-            <h3 class="h4 mb-2">Fliegenfischerrute</h3>
+        <div class="col-8">         
+                <h3 class="h4 mb-2">
+                    <a class="text-body" href="device-smarterer.html">Fliegenfischerrute</a>
+                </h3>
             <p class="mb-0">Mit doppelter Reichweite im Vergleich zum Non-Plus-Ultra von heute. Und Hochseetauglich!</p>
         </div>
         <div class="col-4 d-flex justify-content-end">
-            <img class="img-fluid" src="https://source.unsplash.com/100x100/?fish" alt="Random unsplash image.">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid" src="https://source.unsplash.com/100x100/?fish" alt="Random unsplash image.">
+            </a>
         </div>
     </div>
 </div>
@@ -296,12 +337,16 @@
 
 <div class="col-12 mb-4">
     <div class="row">
-        <div class="col-8">
-            <h3 class="h4 mb-2">Virtual Computer App</h3>
+        <div class="col-8">         
+                <h3 class="h4 mb-2">
+                    <a class="text-body" href="device-smarterer.html">Virtual Computer App</a>
+                </h3>
             <p class="mb-0">Nur noch das Smartphone, alles andere ist Beilage.</p>
         </div>
         <div class="col-4 d-flex justify-content-end">
-            <img class="img-fluid" src="https://source.unsplash.com/100x100/?computer" alt="Random unsplash image.">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid" src="https://source.unsplash.com/100x100/?computer" alt="Random unsplash image.">
+            </a>
         </div>
     </div>
 </div>
@@ -312,12 +357,16 @@
 
 <div class="col-12 mb-4">
     <div class="row">
-        <div class="col-8">
-            <h3 class="h4 mb-2">Heissluft-Schweissgerät</h3>
+        <div class="col-8">         
+                <h3 class="h4 mb-2">
+                    <a class="text-body" href="device-smarterer.html">Heissluft-Schweissgerät</a>
+                </h3>
             <p class="mb-0">Nie wieder Gas kaufen vor dem Schweissen!</p>
         </div>
         <div class="col-4 d-flex justify-content-end">
-            <img class="img-fluid" src="https://source.unsplash.com/100x100/?welder" alt="Random unsplash image.">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid" src="https://source.unsplash.com/100x100/?welder" alt="Random unsplash image.">
+            </a>
         </div>
     </div>
 </div>
