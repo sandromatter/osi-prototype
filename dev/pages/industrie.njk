@@ -1,0 +1,69 @@
+<!-- Imports and variables -->
+{% import "macros/_hero-img.njk" as macroHero%}
+{% import "macros/_call-to-action.njk" as macroCta%}
+{% set page = 'gesellschaft' %}
+{% set title = 'Gesellschaft' %}
+{% set posts = [
+    {
+      "postTitle"   : "Bezahlbares High-End Bike",
+      "postText"    : "Super Teil für wenig Cash.",
+      "postUrl"     : "bike"
+    },
+    {
+      "postTitle"   : "Burger-Koch 3000",
+      "postText"    : "Nie war es einfacher Burger hausgemacht zu kochen",
+      "postUrl"     : "burger"
+
+    },
+    {
+      "postTitle"   : "Schafschär-Roboter",
+      "postText"    : "Endlich immer Wolle zu Hause.",
+      "postUrl"     : "sheep"
+    },
+    {
+      "postTitle"   : "Corona Türöffner",
+      "postText"    : "Ohne Viren Türen öffnen.",
+      "postUrl"     : "door"
+    },
+    {
+      "postTitle"   : "Kopfhörer-Aufwickler",
+      "postText"    : "Geil! Ganz ohne Kabelsalat.",
+      "postUrl"     : "headphones"
+    },
+    {
+      "postTitle"   : "Fliegenfischerrute",
+      "postText"    : "Mit doppelter Reichweite im Vergleich zum Non-Plus-Ultra von heute. Und Hochseetauglich!",
+      "postUrl"     : "fish"
+    },
+    {
+      "postTitle"   : "Virtual Computer App",
+      "postText"    : "Nur noch das Smartphone, alles andere ist Beilage.",
+      "postUrl"     : "computer"
+    },
+    {
+      "postTitle"   : "Heissluft-Schweissgerät",
+      "postText"    : "Nie wieder Gas kaufen vor dem Schweissen!",
+      "postUrl"     : "welder"
+    }
+  ]
+%}
+
+{% extends "main.njk" %}
+
+<!-- Navigation Category -->
+{% block navCategory %}
+  {% include 'components/_nav-category.njk' %}
+{% endblock %}
+
+<!-- Main -->
+{% block content %}
+
+<div class="container">
+
+  {{ macroHero.getHero("Kunststoff Metallbohrer", "Idee des Tages", "Günstiger als Metall und wird nie überhitzen! Langlebigkeit garantiert.", "metal") }}
+
+  <hr/>
+
+  {% include "components/_feed.njk" %}
+
+{% endblock content %}
