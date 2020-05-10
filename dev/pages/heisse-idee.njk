@@ -1,5 +1,5 @@
 <!-- Imports and variables -->
-{% import "macros/_hero-img.njk" as macroHero%}
+{% import "macros/_hero-img-btn.njk" as macroHero%}
 {% import "macros/_call-to-action.njk" as macroCta%}
 {% set page = 'heisse-idee' %}
 {% set title = 'Heisse Idee' %}
@@ -31,7 +31,7 @@
       "postUrl"     : "headphones"
     },
     {
-      "postTitle"   : "Fliegenfischerrute",
+      "postTitle"   : "Fischerrute",
       "postText"    : "Mit doppelter Reichweite im Vergleich zum Non-Plus-Ultra von heute. Und Hochseetauglich!",
       "postUrl"     : "fish"
     },
@@ -60,7 +60,7 @@
 
 <div class="container">
 
-  {{ macroHero.getHero("Auto-Computer", "Idee des Tages", "Ist ihr nativer Borcomputer von ihrem Hersteller untauglich? Ein eifaches Hardware Set zum umrüsten auf Android Auto oder Apple Car!", "car") }}
+  {{ macroHero.getBtnHero("Auto-Computer", "Idee des Tages", "Ist ihr nativer Borcomputer von ihrem Hersteller untauglich? Ein eifaches Hardware Set zum umrüsten auf Android Auto oder Apple Car!", "car") }}
 
   <hr/>
 

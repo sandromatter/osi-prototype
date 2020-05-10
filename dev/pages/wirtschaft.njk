@@ -1,8 +1,8 @@
 <!-- Imports and variables -->
-{% import "macros/_hero-img.njk" as macroHero%}
+{% import "macros/_hero-img-btn.njk" as macroHero%}
 {% import "macros/_call-to-action.njk" as macroCta%}
-{% set page = 'gesellschaft' %}
-{% set title = 'Gesellschaft' %}
+{% set page = 'wirtschaft' %}
+{% set title = 'Wirtschaft' %}
 {% set posts = [
     {
       "postTitle"   : "Bezahlbares High-End Bike",
@@ -60,7 +60,7 @@
 
 <div class="container">
 
-  {{ macroHero.getHero("Cashflow-Calculator", "Idee des Tages", "Um auch in schwierigen Zeiten den Überblick über den Cashflow zu haben.", "cash") }}
+  {{ macroHero.getBtnHero("Cashflow-Calculator", "Idee des Tages", "Um auch in schwierigen Zeiten den Überblick über den Cashflow zu haben.", "cash") }}
 
   <hr/>
 

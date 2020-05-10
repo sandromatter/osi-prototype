@@ -1,8 +1,8 @@
 <!-- Imports and variables -->
-{% import "macros/_hero-img.njk" as macroHero%}
+{% import "macros/_hero-img-btn.njk" as macroHero%}
 {% import "macros/_call-to-action.njk" as macroCta%}
-{% set page = 'gesellschaft' %}
-{% set title = 'Gesellschaft' %}
+{% set page = 'design-tech' %}
+{% set title = 'Design und Tech' %}
 {% set posts = [
     {
       "postTitle"   : "Bezahlbares High-End Bike",
@@ -31,7 +31,7 @@
       "postUrl"     : "headphones"
     },
     {
-      "postTitle"   : "Fliegenfischerrute",
+      "postTitle"   : "Fischerrute",
       "postText"    : "Mit doppelter Reichweite im Vergleich zum Non-Plus-Ultra von heute. Und Hochseetauglich!",
       "postUrl"     : "fish"
     },
@@ -60,7 +60,7 @@
 
 <div class="container">
 
-  {{ macroHero.getHero("Cloud-Foto-Workflow", "Idee des Tages", "Die Fotolibrary auf dem eigenen Server, ohne Abo und immer dabei!", "photography") }}
+  {{ macroHero.getBtnHero("Cloud-Foto-Workflow", "Idee des Tages", "Die Fotolibrary auf dem eigenen Server, ohne Abo und immer dabei!", "photography") }}
 
   <hr/>
 

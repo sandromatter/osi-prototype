@@ -1,0 +1,28 @@
+{% macro getUserHero(heroUserTitle, heroUserSubtitle, heroUserUrl) %}
+
+<div class="row">
+    <div class="col-12">
+        <div class="row image-container-1200">
+            <a class="text-body" href="device-smarterer.html">
+                <img class="img-fluid" src="https://source.unsplash.com/1200x900/?{{ heroUserUrl }}" alt="Random unsplash image">
+            </a>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="row">
+            <h1 class="col-12 h1 mt-5 bold">{{ heroUserTitle }}</h1> 
+            <div class="col-12 d-flex mb-3 align-items-center">
+                <h2 class="flex-grow-1 h4">
+                    <a class="text-body" href="profile.html">{{ heroUserSubtitle }}</a>
+                </h2>
+                <div class="justify-content-end pl-2">
+                    <a class="user-avatar" href="profile.html">
+                        <img class="rounded-circle" src="https://source.unsplash.com/X6Uj51n5CE8/50x50" alt="User avatar">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endmacro %}

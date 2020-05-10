@@ -1,5 +1,5 @@
 <!-- Imports and variables -->
-{% import "macros/_hero-img.njk" as macroHero%}
+{% import "macros/_hero-img-btn.njk" as macroHero%}
 {% import "macros/_call-to-action.njk" as macroCta%}
 {% set page = 'home' %}
 {% set posts = [
@@ -34,7 +34,7 @@
 
 <div class="container">
 
-  {{ macroHero.getHero("Device-Smarterer", "Idee des Tages", "Damit sie jederzeit schnell jedes Ihrer Geräte zum Smart-Device umbauen können.", "device") }}
+  {{ macroHero.getBtnHero("Device-Smarterer", "Idee des Tages", "Damit sie jederzeit schnell jedes Ihrer Geräte zum Smart-Device umbauen können.", "device") }}
 
   <hr/>
 

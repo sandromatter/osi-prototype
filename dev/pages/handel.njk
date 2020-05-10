@@ -1,8 +1,8 @@
 <!-- Imports and variables -->
-{% import "macros/_hero-img.njk" as macroHero%}
+{% import "macros/_hero-img-btn.njk" as macroHero%}
 {% import "macros/_call-to-action.njk" as macroCta%}
-{% set page = 'gesellschaft' %}
-{% set title = 'Gesellschaft' %}
+{% set page = 'handel' %}
+{% set title = 'Handel' %}
 {% set posts = [
     {
       "postTitle"   : "Bezahlbares High-End Bike",
@@ -31,7 +31,7 @@
       "postUrl"     : "headphones"
     },
     {
-      "postTitle"   : "Fliegenfischerrute",
+      "postTitle"   : "Fischerrute",
       "postText"    : "Mit doppelter Reichweite im Vergleich zum Non-Plus-Ultra von heute. Und Hochseetauglich!",
       "postUrl"     : "fish"
     },
@@ -60,7 +60,7 @@
 
 <div class="container">
 
-  {{ macroHero.getHero("Börsenwecker", "Idee des Tages", "Damit Sie nicht überrascht werden, wenn ihre Aktien Bach ab gehen.", "clock") }}
+  {{ macroHero.getBtnHero("Börsenwecker", "Idee des Tages", "Damit Sie nicht überrascht werden, wenn ihre Aktien Bach ab gehen.", "clock") }}
 
   <hr/>
 

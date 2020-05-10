@@ -1,8 +1,8 @@
 <!-- Imports and variables -->
-{% import "macros/_hero-img.njk" as macroHero%}
+{% import "macros/_hero-img-btn.njk" as macroHero%}
 {% import "macros/_call-to-action.njk" as macroCta%}
-{% set page = 'gesellschaft' %}
-{% set title = 'Gesellschaft' %}
+{% set page = 'medien-marketing' %}
+{% set title = 'Medien und Marketing' %}
 {% set posts = [
     {
       "postTitle"   : "Bezahlbares High-End Bike",
@@ -31,7 +31,7 @@
       "postUrl"     : "headphones"
     },
     {
-      "postTitle"   : "Fliegenfischerrute",
+      "postTitle"   : "Fischerrute",
       "postText"    : "Mit doppelter Reichweite im Vergleich zum Non-Plus-Ultra von heute. Und Hochseetauglich!",
       "postUrl"     : "fish"
     },
@@ -60,7 +60,7 @@
 
 <div class="container">
 
-  {{ macroHero.getHero("Medien-Netflix", "Idee des Tages", "Flatrate für alle Medien. Damit sie selbst bestimmen können, woher sie ihre Infos holen!", "newspaper") }}
+  {{ macroHero.getBtnHero("Medien-Netflix", "Idee des Tages", "Flatrate für alle Medien. Damit sie selbst bestimmen können, woher sie ihre Infos holen!", "newspaper") }}
 
   <hr/>
 

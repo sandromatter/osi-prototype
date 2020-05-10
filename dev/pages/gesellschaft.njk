@@ -1,5 +1,5 @@
 <!-- Imports and variables -->
-{% import "macros/_hero-img.njk" as macroHero%}
+{% import "macros/_hero-img-btn.njk" as macroHero%}
 {% import "macros/_call-to-action.njk" as macroCta%}
 {% set page = 'gesellschaft' %}
 {% set title = 'Gesellschaft' %}
@@ -31,7 +31,7 @@
       "postUrl"     : "headphones"
     },
     {
-      "postTitle"   : "Fliegenfischerrute",
+      "postTitle"   : "Fischerrute",
       "postText"    : "Mit doppelter Reichweite im Vergleich zum Non-Plus-Ultra von heute. Und Hochseetauglich!",
       "postUrl"     : "fish"
     },
@@ -60,7 +60,7 @@
 
 <div class="container">
 
-  {{ macroHero.getHero("DUO", "Idee des Tages", "Die praktische Erweiterung zu UNO! Nie hat das Spiel mehr Spass gemacht.", "cardgame") }}
+  {{ macroHero.getBtnHero("DUO", "Idee des Tages", "Die praktische Erweiterung zu UNO! Nie hat das Spiel mehr Spass gemacht.", "cardgame") }}
 
   <hr/>
 

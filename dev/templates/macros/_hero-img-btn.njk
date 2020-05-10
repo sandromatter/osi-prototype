@@ -1,22 +1,22 @@
-{% macro getHero(heroTitle, heroSubtitle, heroText, heroUrl) %}
+{% macro getBtnHero(heroBtnTitle, heroBtnSubtitle, heroBtnText, heroBtnUrl) %}
 
 <div class="row">
     <div class="col-12">
         <div class="row image-container-1200">
             <a class="text-body" href="device-smarterer.html">
-                <img class="img-fluid" src="https://source.unsplash.com/1200x900/?{{ heroUrl }}" alt="Random unsplash image">
+                <img class="img-fluid" src="https://source.unsplash.com/1200x900/?{{ heroBtnUrl }}" alt="Random unsplash image">
             </a>
         </div>
     </div>
     <div class="col-12">
         <div class="row">
             <h2 class="col-12 h3 my-4">
-                <a class="text-body" href="device-smarterer.html">{{ heroSubtitle }}</a>
+                <a class="text-body" href="device-smarterer.html">{{ heroBtnSubtitle }}
             </h2>
             <h1 class="col-12 h1 mb-4 bold">
-                <a class="text-body" href="device-smarterer.html">{{ heroTitle }}</h1> 
-            </a>
-            <p class="col-9 mb-">{{ heroText }}</p>
+                <a class="text-body" href="device-smarterer.html">{{ heroBtnTitle }}</a>
+            </h1> 
+            <p class="col-9 mb-">{{ heroBtnText }}</p>
             <div class="col-12 mb-3 d-flex justify-content-end align-items-end">
                 <button onclick="location.href='device-smarterer.html'" type="button" class="btn btn-primary btn-size">zum Projekt</button>
             </div>

@@ -1,4 +1,4 @@
-{% macro getCta(ctaText, ctaButton) %}
+{% macro getCta(ctaText, ctaButton, ctaUrl) %}
 
 <div class="row cta-box shadow gradient justify-content mt-4">
     <div class="col-12">
@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div class="col d-flex justify-content-end">
-                <button onclick="location.href='neue-idee.html'" type="button" class="btn btn-light btn-size">{{ ctaButton }}</button>
+                <button onclick="location.href='{% if ctaUrl %}{{ ctaUrl }}{% else %}heisse-idee{% endif %}.html'" type="button" class="btn btn-light btn-size">{{ ctaButton }}</button>
             </div>
         </div>
     </div>    
