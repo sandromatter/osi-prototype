@@ -44,6 +44,15 @@ p {
     width: 100%;
 }
 
+.navbar-back {
+    background: $gray-primary;
+    width: 100%;
+}
+
+.navbar-back > .btn.btn-outline-dark.mx-1 {
+    background-color: $white;
+}
+
 .navbar-category-nowrap {
     white-space: nowrap;
 }

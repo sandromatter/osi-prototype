@@ -23,6 +23,10 @@
       }}
   {% endfor %}
 
-  
+  {% if title %}
+    {% include 'partials/_btn-prev-next.njk' %}
+  {% else %}
+    {% include 'partials/_btn-more.njk' %}
+  {% endif %}
 
 </div>

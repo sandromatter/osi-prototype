@@ -49,6 +49,15 @@ p {
   width: 100%;
 }
 
+.navbar-back {
+  background: rgba(0, 0, 0, 0.03);
+  width: 100%;
+}
+
+.navbar-back > .btn.btn-outline-dark.mx-1 {
+  background-color: #fff;
+}
+
 .navbar-category-nowrap {
   white-space: nowrap;
 }
