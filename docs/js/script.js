@@ -3,6 +3,10 @@
  *
  */
 
+/**
+ * 
+ * Slick carousel not allowed.
+ * 
 $('#carouselExample').on('slide.bs.carousel', function (e) {
 
     var $e = $(e.relatedTarget);
@@ -63,3 +67,4 @@ $(document).ready(function () {
     });
 });
 
+*/

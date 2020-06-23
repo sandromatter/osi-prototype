@@ -232,3 +232,8 @@ footer {
 .g-font-size {
   font-size: 0.75rem;
 }
+
+.white-shadow {
+  color: white;
+  text-shadow: 5px 5px 15px #fff;
+}
