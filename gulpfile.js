@@ -7,14 +7,14 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var prettyHtml = require('gulp-pretty-html');
 var autoprefixer = require('gulp-autoprefixer');
 var sassdoc = require('sassdoc');
 var browserSync = require('browser-sync').create();
 var nunjucksRender = require('gulp-nunjucks-render');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
-var siteOutput = 'docs';
-
+var siteOutput = 'public';
 
 // -----------------------------------------------------------------------------
 // Configuration
@@ -28,20 +28,33 @@ var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 var sassdocOptions = { dest: siteOutput + '/sassdoc' };
 
-
 // -----------------------------------------------------------------------------
 // Sass compilation
 // -----------------------------------------------------------------------------
 
 gulp.task('sass', function () {
   return gulp
-    .src(inputMain)
-    .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(gulp.dest(output))
-    .pipe(browserSync.stream());
+  .src(inputMain)
+  .pipe(sass(sassOptions).on('error', sass.logError))
+  .pipe(autoprefixer(autoprefixerOptions))
+  .pipe(gulp.dest(output))
+  .pipe(browserSync.stream());
 });
 
+// -----------------------------------------------------------------------------
+// HTML prettify compilation
+// -----------------------------------------------------------------------------
+ 
+gulp.task('pretty-html', function () {
+  return gulp
+      .src('./public/*.html')
+      .pipe(prettyHtml({
+        indent_size: 4,
+        indent_char: ' ',
+        preserve_newlines: false
+    }))
+      .pipe(gulp.dest('./docs/'));
+});
 
 // -----------------------------------------------------------------------------
 // Templating
@@ -57,7 +70,6 @@ gulp.task('nunjucks', function () {
     .pipe(gulp.dest(siteOutput))
 });
 
-
 // -----------------------------------------------------------------------------
 // Imagemin
 // -----------------------------------------------------------------------------
@@ -72,7 +84,6 @@ gulp.task('img', function () {
     .pipe(gulp.dest(siteOutput + '/img'));
 });
 
-
 // -----------------------------------------------------------------------------
 // Fonts
 // -----------------------------------------------------------------------------
@@ -81,7 +92,6 @@ gulp.task('img', function () {
 //   return gulp.src(['./fonts/*'])
 //   .pipe(gulp.dest(siteOutput + '/fonts/'));
 // });
-
 
 // -----------------------------------------------------------------------------
 // Sass documentation generation
@@ -93,7 +103,6 @@ gulp.task('sassdoc', function () {
     .pipe(sassdoc(sassdocOptions))
     .resume();
 });
-
 
 // -----------------------------------------------------------------------------
 // Watchers
@@ -111,7 +120,6 @@ gulp.task('watch', function () {
 
 });
 
-
 // -----------------------------------------------------------------------------
 // Static server
 // -----------------------------------------------------------------------------
@@ -124,9 +132,8 @@ gulp.task('browser-sync', function () {
   });
 });
 
-
 // -----------------------------------------------------------------------------
 // Default task
 // -----------------------------------------------------------------------------
 
-gulp.task('default', ['sass', 'nunjucks', 'img', 'watch', 'browser-sync']);
+gulp.task('default', ['sass', 'nunjucks', 'img', 'watch', 'pretty-html','browser-sync']);

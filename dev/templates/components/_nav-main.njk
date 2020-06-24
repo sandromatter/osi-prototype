@@ -1,6 +1,6 @@
 {% set navsMain = [
     { title: 'Home', url: 'index.html', state: 'home' },
-    { title: 'Idee teilen', url: 'neue-idee.html', state: 'neue-idee' },
+    { title: 'Idee teilen', url: 'neue-idee-1.html', state: 'neue-idee-1' },
     { title: 'Heisse Ideen', url: 'heisse-idee.html', state: 'heisse-idee' }
 ] %}
 
@@ -28,8 +28,7 @@
     </button>
     <div class="collapse navbar-collapse nav-item-menu flex-grow-0 text-center" id="collapsibleNavbar">
       <ul class="navbar-nav">
-
-      {% for nav in navsMain %}
+        {% for nav in navsMain %}
             {% if page == nav.state %}
             <li class="nav-item active">
             {% else %}
@@ -38,7 +37,6 @@
                 <a class="nav-link nav-link-text text-body" href="{{ nav.url }}">{{ nav.title }}</a>
             </li class="nav-item">
         {% endfor %}
-
       </ul>
     </div>
   </nav>

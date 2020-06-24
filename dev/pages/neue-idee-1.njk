@@ -1,0 +1,72 @@
+<!-- Imports and variables -->
+{% set page = 'neue-idee-1' %}
+{% set title = 'Neue Idee' %}
+
+{% extends "main.njk" %}
+
+<!-- Main -->
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:25%"></div>
+            </div>
+            <div class="d-flex justify-content-around mt-2">
+                <p><a class="text-body active" href="neue-idee-1.html">Idee</a></p>
+                <p class="grey-500"><a class="text-body" href="neue-idee-2.html">Registrierung / Login</a></p>
+                <p class="grey-500"><a class="text-body" href="neue-idee-3.html">Review</a></p>
+                <p class="grey-500"><a class="text-body" href="neue-idee-4.html">Push</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-12 d-flex">
+            <h2 class="h2">Idee</h2>
+        </div>
+    </div>
+
+    <hr class="mb-3"/>
+
+    {% include "components/_fileupload.njk" %}
+
+    <div class="row">
+        <div class="col-12">
+            <form>
+                <div class="form-group">
+                    <h3 class="h4 mt-5 mb-3">Titel</h3>
+                    <input class="form-control" type="text" placeholder="Gib den Titel deiner Idee ein.">
+                </div>
+                <div class="form-group">
+                    <h3 class="h4 mt-5 mb-3">Beschreibung</h3>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Gib deiner Idee eine Beschreibung."></textarea>
+                </div>
+                <div class="form-group">
+                    <h3 class="h4 mt-5 mb-3">Kategorie</h3>
+                    <select class="form-control">
+                        <option>Wähle die Kategorie.</option>
+                        <option>Gesellschaft</option>
+                        <option>Design & Tech</option>
+                        <option>Industrie</option>
+                        <option>Tourismus & Gastro</option>
+                        <option>Wirtschaft</option>
+                        <option>Medien & Marketing</option>
+                        <option>Handel</option>
+                        <option>Freizeit</option>
+                        <option>Andere</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mt-5 mb-3 d-flex justify-content-end align-items-end">
+            <button onclick="location.href='neue-idee-2.html'" type="button" class="btn btn-primary btn-size">Weiter <i class="fas fa-chevron-right pl-4"></i></button>
+        </div>
+    </div>
+
+{% endblock content %}

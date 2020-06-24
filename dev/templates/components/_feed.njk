@@ -3,16 +3,13 @@
 <div class="row">
   <h2 class="col-12 h3 mt-4 mb-5">
     <a class="text-body" href="{% if page == "home" %}heisse-idee{% else %}{{ page }}{% endif %}.html">
-
     {% if title == "Heisse Idee" or page == "home" %}
           Heisse Ideen
     {% else %}
       {{ title }}
     {% endif %}
-
     </a>
   </h2>
-
   {% for post in posts %}
       {{ 
         macroPost.getPost(
@@ -22,11 +19,9 @@
         ) 
       }}
   {% endfor %}
-
   {% if title %}
     {% include 'partials/_btn-prev-next.njk' %}
   {% else %}
     {% include 'partials/_btn-more.njk' %}
   {% endif %}
-
 </div>

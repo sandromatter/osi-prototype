@@ -11,9 +11,7 @@
 
 <nav class="navbar navbar-category d-flex justify-content-around">
     <ul class="navbar-category-list mb-0 pl-0">
-
         {% for nav in navsCategory %}
-        
             {% if page == nav.state %}
             <li class="active">
                 <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="{{ nav.url }}">{{ nav.title }}</a>
@@ -22,8 +20,6 @@
                 <a class="nav-item nav-link nav-link-text navbar-category-nowrap" href="{{ nav.url }}">{{ nav.title }}</a>
             {% endif %}
             </li>
-
         {% endfor %}
-
     </ul>
 </nav>

@@ -8,6 +8,7 @@
     "browser-sync": "^2.9.11",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-pretty-html": "^2.0.10",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-nunjucks-render": "^1.0.0",

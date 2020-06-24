@@ -3,6 +3,20 @@
  *
  */
 
+// Check on div click
+$(".card-checkbox").on("click",function() {
+    var checkbox = $(this).find("input[type='checkbox']");
+    
+    if( checkbox.attr("checked") == "" ){
+        checkbox.attr("checked","true");
+    }
+    
+    else {
+        checkbox.attr("checked","");
+    }
+    
+});
+
 /**
  * 
  * Slick carousel not allowed.

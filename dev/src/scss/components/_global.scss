@@ -234,3 +234,27 @@ footer {
   color: white;
   text-shadow: 5px 5px 15px #fff;
 }
+
+// Progressbar
+
+.progress-bar.grey-600 {
+    background-color: $gray-600 !important;
+}
+
+.progress-bar.grey-400 {
+    background-color: $gray-400 !important;
+}
+
+p.grey-500{
+    color: $gray-500;
+}
+
+// Cards
+
+.card-checkbox:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3)!important;
+}
+
+.card-checkbox:click {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3)!important;
+}
