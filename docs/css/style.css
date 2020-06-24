@@ -169,6 +169,13 @@ footer {
 
 .footer-icons {
   color: #fff;
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .footer-icons {
+    font-size: 1em;
+  }
 }
 
 .footer-hr {
@@ -234,8 +241,17 @@ footer {
 }
 
 .white-shadow {
-  color: white;
-  text-shadow: 5px 5px 15px #fff;
+  background-color: white;
+}
+
+.carousel-item {
+  max-height: 1024px;
+}
+
+@media (min-width: 992px) {
+  .carousel-item {
+    max-height: 400px;
+  }
 }
 
 .progress-bar.grey-600 {
@@ -256,4 +272,17 @@ p.grey-500 {
 
 .card-checkbox:click {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
+}
+
+@media (min-width: 768px) {
+  .idea-button-prev-next-first {
+    padding-right: 11rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .idea-button-prev-next {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
 }

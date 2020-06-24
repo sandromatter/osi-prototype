@@ -162,6 +162,10 @@ footer {
 
 .footer-icons {
     color: $white;
+    font-size: 1.5em;
+    @include medium-breakpoint {
+        font-size: 1em;
+    }
 }
 
 .footer-hr {
@@ -231,8 +235,14 @@ footer {
 // Carousel
 
 .white-shadow {
-  color: white;
-  text-shadow: 5px 5px 15px #fff;
+  background-color: white;
+}
+
+.carousel-item {
+    max-height: 1024px;
+    @include large-breakpoint {
+        max-height: 400px;
+    }
 }
 
 // Progressbar
@@ -258,3 +268,18 @@ p.grey-500{
 .card-checkbox:click {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.3)!important;
 }
+
+// Idea buttons next & back
+
+.idea-button-prev-next-first {
+    @include medium-breakpoint {
+        padding-right: 11rem;
+    }
+}
+
+.idea-button-prev-next {
+    @include medium-breakpoint {
+        justify-content: space-around !important;
+    }
+}
+

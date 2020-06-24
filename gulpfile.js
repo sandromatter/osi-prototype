@@ -21,8 +21,9 @@ var siteOutput = 'public';
 // -----------------------------------------------------------------------------
 
 var input = 'dev/src/scss/**/*.scss';
+var inputHtml = 'public/**/*.html';
 var inputMain = 'dev/src/scss/style.scss';
-var output = siteOutput + '/css';
+var output = 'docs/css';
 var inputTemplates = 'dev/pages/*.njk';
 var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
@@ -115,9 +116,12 @@ gulp.task('watch', function () {
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
   });
 
+  // Watch the sass input folder for change,
+  // and run `sass` task when something happens
+  gulp.watch(inputHtml, ['pretty-html']);
+
   // Watch nunjuck templates and reload browser if change
   gulp.watch(inputTemplates, ['nunjucks']).on('change', browserSync.reload);
-
 });
 
 // -----------------------------------------------------------------------------
@@ -136,4 +140,4 @@ gulp.task('browser-sync', function () {
 // Default task
 // -----------------------------------------------------------------------------
 
-gulp.task('default', ['sass', 'nunjucks', 'img', 'watch', 'pretty-html','browser-sync']);
+gulp.task('default', ['sass', 'nunjucks', 'pretty-html', 'img', 'watch', 'browser-sync']);
