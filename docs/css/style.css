@@ -286,3 +286,17 @@ p.grey-500 {
         justify-content: space-around !important;
   }
 }
+
+@media (min-width: 768px) {
+  .hero-img {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+  }
+}

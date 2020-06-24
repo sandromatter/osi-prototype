@@ -283,3 +283,18 @@ p.grey-500{
     }
 }
 
+// Hero Img
+
+.hero-img {
+    @include medium-breakpoint {
+        justify-content: space-around !important;
+    }
+}
+
+.hero-text {
+    @include medium-breakpoint {
+        justify-content: space-around !important;
+    }
+}
+
+
