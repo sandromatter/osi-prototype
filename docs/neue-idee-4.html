@@ -22,7 +22,7 @@
 <body>
     <!-- Navigation Main -->
     <header id="header">
-        <nav id="nav-bar" class="navbar nav-main navbar-light navbar-expand-sm">
+        <nav id="nav-bar" class="navbar nav-main navbar-light navbar-expand-md">
             <a class="navbar-brand" href="index.html">
                 <img src="img/OSI_Logo.png" alt="OSI Logo">
             </a>
@@ -35,6 +35,7 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="profile.html">Dashboard</a>
                             <a class="dropdown-item" href="profile.html">Profil bearbeiten</a>
+                            <a class="dropdown-item" href="profile.html">Firma anmelden</a>
                             <a class="dropdown-item" href="index.html">Log Out</a>
                         </div>
                     </li>
@@ -55,6 +56,12 @@
                         <a class="nav-link nav-link-text text-body" href="heisse-idee.html">Heisse Ideen</a>
                     </li class="nav-item">
                 </ul>
+                <form class="form-inline">
+                    <div class="d-flex mx-auto my-2">
+                        <input class="form-control mr-2" type="search" placeholder="Idee suchen" aria-label="Search">
+                        <button onclick="location.href='device-smarterer.html'" type="button" class="btn btn-outline-dark">Suche</button>
+                    </div>
+                </form>
             </div>
         </nav>
     </header>
@@ -87,7 +94,7 @@
                 <hr class="mb-2" />
                 <div class="row justify-content-md-center ">
                     <div class="col-12 col-md-8 d-flex justify-content-center mt-5 text-center">
-                        <p class="mb-0">Sie möchten Ihre Idee mit einem Unternehmen teilen? Senden Sie Ihren Wunsch-Partnern einen Ideen-Push um sie auf Ihre Idee aufmerksam zu machen.</p>
+                        <p class="mb-0"><strong>Gratulation! Sie haben ihre Idee mit der Welt geteilt. Danke!</strong><br/>Sie möchten ein Unternehmen über Ihre Idee benachtichtigen? Senden Sie Ihren Wunsch-Partnern einen Ideen-Push um sie auf Ihre Idee aufmerksam zu machen.</p>
                     </div>
                     <div class="col-12 col-md-8 d-flex mt-5 mb-3">
                         <input class="form-control mr-2" type="search" placeholder="Suche nach einem Unternehmen." aria-label="Search">
@@ -176,12 +183,12 @@
                     <div class="col-12">
                         <div class="row">
                             <div class="col-12 mb-4">
-                                <p class="h2">Gratulation! Sie haben ihre Idee mit der Welt geteilt. Danke!</p>
+                                <p class="h2">Teilen Sie Ihre Idee mit den gewählten Unternehmen!</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col d-flex justify-content-end">
-                                <button onclick="location.href='index.html'" type="button" class="btn btn-light btn-size">Zurück zur Startseite</button>
+                                <button onclick="location.href='index.html'" type="button" class="btn btn-light btn-size">Unternehmen benachrichtigen</button>
                             </div>
                         </div>
                     </div>

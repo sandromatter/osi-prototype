@@ -22,7 +22,7 @@
 <body>
     <!-- Navigation Main -->
     <header id="header">
-        <nav id="nav-bar" class="navbar nav-main navbar-light navbar-expand-sm">
+        <nav id="nav-bar" class="navbar nav-main navbar-light navbar-expand-md">
             <a class="navbar-brand" href="index.html">
                 <img src="img/OSI_Logo.png" alt="OSI Logo">
             </a>
@@ -35,6 +35,7 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="profile.html">Dashboard</a>
                             <a class="dropdown-item" href="profile.html">Profil bearbeiten</a>
+                            <a class="dropdown-item" href="profile.html">Firma anmelden</a>
                             <a class="dropdown-item" href="index.html">Log Out</a>
                         </div>
                     </li>
@@ -55,6 +56,12 @@
                         <a class="nav-link nav-link-text text-body" href="heisse-idee.html">Heisse Ideen</a>
                     </li class="nav-item">
                 </ul>
+                <form class="form-inline">
+                    <div class="d-flex mx-auto my-2">
+                        <input class="form-control mr-2" type="search" placeholder="Idee suchen" aria-label="Search">
+                        <button onclick="location.href='device-smarterer.html'" type="button" class="btn btn-outline-dark">Suche</button>
+                    </div>
+                </form>
             </div>
         </nav>
     </header>
@@ -120,7 +127,7 @@
                 <div class="row">
                     <div class="col-12 mt-4 mb-3 d-flex justify-content-between idea-button-prev-next">
                         <button onclick="location.href='neue-idee-2.html'" type="button" class="btn btn-primary btn-size"><i class="fas fa-chevron-left pr-4"></i>Zurück</button>
-                        <button onclick="location.href='neue-idee-4.html'" type="button" class="btn btn-primary btn-size ">Idee publishen</i></button>
+                        <button onclick="location.href='neue-idee-4.html'" type="button" class="btn btn-primary btn-size ">Idee publizieren</i></button>
                     </div>
                 </div>
         </article>

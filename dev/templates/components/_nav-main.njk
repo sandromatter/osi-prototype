@@ -5,7 +5,7 @@
 ] %}
 
 <header id="header">
-  <nav id="nav-bar" class="navbar nav-main navbar-light navbar-expand-sm">
+  <nav id="nav-bar" class="navbar nav-main navbar-light navbar-expand-md">
     <a class="navbar-brand" href="index.html">
       <img src="img/OSI_Logo.png" alt="OSI Logo">
     </a>
@@ -18,6 +18,7 @@
           <div class="dropdown-menu">
             <a class="dropdown-item" href="profile.html">Dashboard</a>
             <a class="dropdown-item" href="profile.html">Profil bearbeiten</a>
+            <a class="dropdown-item" href="profile.html">Firma anmelden</a>
             <a class="dropdown-item" href="index.html">Log Out</a>
           </div>
         </li>   
@@ -38,6 +39,12 @@
             </li class="nav-item">
         {% endfor %}
       </ul>
+      <form class="form-inline">
+        <div class="d-flex mx-auto my-2">
+          <input class="form-control mr-2" type="search" placeholder="Idee suchen" aria-label="Search">
+          <button onclick="location.href='device-smarterer.html'" type="button" class="btn btn-outline-dark">Suche</button>
+        </div>
+      </form>
     </div>
   </nav>
 </header>

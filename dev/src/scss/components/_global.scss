@@ -97,7 +97,7 @@ p {
 }
 
 .nav-item-menu {
-    @include small-breakpoint {
+    @include medium-breakpoint {
         margin-left: auto;
         order: 2;
     }
@@ -106,7 +106,7 @@ p {
 .nav-item-avatar {
     margin-left: auto;
     padding-right: 1rem;
-    @include small-breakpoint {
+    @include medium-breakpoint {
         margin-left: 0;
         padding-right: 0;
         order: 3;

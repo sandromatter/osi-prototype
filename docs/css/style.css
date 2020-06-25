@@ -104,7 +104,7 @@ p {
   left: -100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .nav-item-menu {
     margin-left: auto;
     -ms-flex-order: 2;
@@ -117,7 +117,7 @@ p {
   padding-right: 1rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .nav-item-avatar {
     margin-left: 0;
     padding-right: 0;

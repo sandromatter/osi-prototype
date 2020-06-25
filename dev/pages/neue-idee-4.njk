@@ -38,7 +38,7 @@
 
     <div class="row justify-content-md-center ">
         <div class="col-12 col-md-8 d-flex justify-content-center mt-5 text-center">
-            <p class="mb-0">Sie möchten Ihre Idee mit einem Unternehmen teilen? Senden Sie Ihren Wunsch-Partnern einen Ideen-Push um sie auf Ihre Idee aufmerksam zu machen.</p>
+            <p class="mb-0"><strong>Gratulation! Sie haben ihre Idee mit der Welt geteilt. Danke!</strong><br/>Sie möchten ein Unternehmen über Ihre Idee benachtichtigen? Senden Sie Ihren Wunsch-Partnern einen Ideen-Push um sie auf Ihre Idee aufmerksam zu machen.</p>
         </div>
         <div class="col-12 col-md-8 d-flex mt-5 mb-3">
             <input class="form-control mr-2" type="search" placeholder="Suche nach einem Unternehmen." aria-label="Search">
@@ -48,6 +48,6 @@
 
     {% include 'components/_cards.njk' %}
 
-  {{ macroCta.getCta("Gratulation! Sie haben ihre Idee mit der Welt geteilt. Danke!", "Zurück zur Startseite", "index") }}
+  {{ macroCta.getCta("Teilen Sie Ihre Idee mit den gewählten Unternehmen!", "Unternehmen benachrichtigen", "index") }}
 
 {% endblock content %}
