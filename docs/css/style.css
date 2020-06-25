@@ -154,9 +154,11 @@ html, body {
 }
 
 .cta-box {
-  height: 30vh;
+  min-height: 30vh;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 footer {

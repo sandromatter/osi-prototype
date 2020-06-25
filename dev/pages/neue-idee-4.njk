@@ -36,11 +36,11 @@
 
     <hr class="mb-2"/>
 
-    <div class="row">
-        <div class="col-12 d-flex justify-content-center mt-5 text-center">
+    <div class="row justify-content-md-center ">
+        <div class="col-12 col-md-8 d-flex justify-content-center mt-5 text-center">
             <p class="mb-0">Sie möchten Ihre Idee mit einem Unternehmen teilen? Senden Sie Ihren Wunsch-Partnern einen Ideen-Push um sie auf Ihre Idee aufmerksam zu machen.</p>
         </div>
-        <div class="col-12 d-flex mt-5 mb-3">
+        <div class="col-12 col-md-8 d-flex mt-5 mb-3">
             <input class="form-control mr-2" type="search" placeholder="Suche nach einem Unternehmen." aria-label="Search">
             <button class="btn btn-outline-dark" type="submit">Suche</button>
         </div>
@@ -48,6 +48,6 @@
 
     {% include 'components/_cards.njk' %}
 
-  {{ macroCta.getCta("Gratulation! Sie haben ihre Idee mit der Welt geteilt. Danke!", "Zurück zur Startseite") }}
+  {{ macroCta.getCta("Gratulation! Sie haben ihre Idee mit der Welt geteilt. Danke!", "Zurück zur Startseite", "index") }}
 
 {% endblock content %}
