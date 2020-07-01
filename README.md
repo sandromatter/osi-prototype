@@ -2,9 +2,9 @@
 
 ## Prototype on GitHub Pages 
 
-Find the final Bootstrap prototype at https://sandromatter.github.io/osi-prototype.
+Find the final Bootstrap prototype at https://bit.ly/osi-bootstrap-prototype.
 
-Find the Figma prototype at https://www.figma.com/proto/zhLs7owHvbdK6RCtmftbCU/OSI-Mockups?node-id=472%3A2131&scaling=min-zoom
+Find the Figma prototype at https://bit.ly/osi-figma-prototype
 
 ---
 
