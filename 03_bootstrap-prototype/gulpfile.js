@@ -14,17 +14,17 @@ var browserSync = require('browser-sync').create();
 var nunjucksRender = require('gulp-nunjucks-render');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
-var siteOutput = 'public';
+var siteOutput = '03_bootstrap-prototype/public';
 
 // -----------------------------------------------------------------------------
 // Configuration
 // -----------------------------------------------------------------------------
 
-var input = 'dev/src/scss/**/*.scss';
-var inputHtml = 'public/**/*.html';
-var inputMain = 'dev/src/scss/style.scss';
-var output = 'docs/css';
-var inputTemplates = 'dev/pages/*.njk';
+var input = '03_bootstrap-prototype/dev/src/scss/**/*.scss';
+var inputHtml = '03_bootstrap-prototype/public/**/*.html';
+var inputMain = '03_bootstrap-prototype/dev/src/scss/style.scss';
+var output = '../docs/css';
+var inputTemplates = '03_bootstrap-prototype/dev/pages/*.njk';
 var sassOptions = { outputStyle: 'expanded' };
 var autoprefixerOptions = { browsers: ['last 2 versions', '> 5%', 'Firefox ESR'] };
 var sassdocOptions = { dest: siteOutput + '/sassdoc' };
@@ -54,7 +54,7 @@ gulp.task('pretty-html', function () {
         indent_char: ' ',
         preserve_newlines: false
     }))
-      .pipe(gulp.dest('./docs/'));
+      .pipe(gulp.dest('../docs/'));
 });
 
 // -----------------------------------------------------------------------------
@@ -62,7 +62,7 @@ gulp.task('pretty-html', function () {
 // -----------------------------------------------------------------------------
 
 gulp.task('nunjucks', function () {
-  nunjucksRender.nunjucks.configure(['dev/templates']);
+  nunjucksRender.nunjucks.configure(['03_bootstrap-prototype/dev/templates']);
   // Gets .html and .nunjucks files in pages
   return gulp.src(inputTemplates)
     // Renders template with nunjucks
@@ -76,7 +76,7 @@ gulp.task('nunjucks', function () {
 // -----------------------------------------------------------------------------
 
 gulp.task('img', function () {
-  return gulp.src('./img/**/*')
+  return gulp.src('../img/**/*')
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{ removeViewBox: false }],
@@ -131,7 +131,7 @@ gulp.task('watch', function () {
 gulp.task('browser-sync', function () {
   browserSync.init({
     server: {
-      baseDir: './docs/'
+      baseDir: '../docs/'
     }
   });
 });
